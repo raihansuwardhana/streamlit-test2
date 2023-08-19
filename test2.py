@@ -33,7 +33,7 @@ negative_tweets = twitter_samples.strings('negative_tweets.json')
 
 # Menggabungkan dataset positif dan negatif
 dataset = [(tweet, 'Sentimen Positif') for tweet in positive_tweets] + [(tweet, 'Sentimen Negatif') for tweet in negative_tweets]
-@@ -81,7 +81,7 @@ def extract_features(words):
+def extract_features(words):
         cleaned_input = cleaned_input.lower()
 
         # Langkah 3: Tokenisasi
